@@ -61,14 +61,14 @@ class MVVMCAuthenticationViewController: UIViewController
         viewModel?.submit()
     }
     
-    func emailFieldDidChange(_ textField: UITextField)
+    @objc func emailFieldDidChange(_ textField: UITextField)
     {
         if let text = textField.text {
             viewModel?.email = text
         }
     }
     
-    func passwordFieldDidChange(_ textField: UITextField)
+    @objc func passwordFieldDidChange(_ textField: UITextField)
     {
         if let text = textField.text {
             viewModel?.password = text
